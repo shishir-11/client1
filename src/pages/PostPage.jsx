@@ -14,7 +14,7 @@ const PostPage = () => {
     useEffect(()=>{
         const fetchData = async()=>{
             try{
-                const response = await fetch(`http://localhost:4000/post/${params.id}`,{
+                const response = await fetch(`https://server-production-359e.up.railway.app/post/${params.id}`,{
                     method:'GET',
                     credentials:'include'
                 })
